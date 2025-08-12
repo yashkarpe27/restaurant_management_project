@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Restaurant Management</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Restaurant</h1>
+            <p>Fresh Delicious Made for you</p>
+        </header>
+        <nav>
+            <a href="/">HOME</a>
+            <a href="{% url 'menu' %}">Menu</a>
+            <a href="{% url 'orders' %}">Orders</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+        <main>
+            <section>
+                <h2>Order Management</h2>
+                <p>Manage customer orders with ease.</p>
+            </section>
+            <section>
+                <h2>Menu Updates</h2>
+                <p>Update your menu instantly.</p>
+            </section>
+            <section>
+                <h2>Billing</h2>
+                <p>Quick and easy billing process.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 My Restaurant</p>
+        </footer>
+    </body>
