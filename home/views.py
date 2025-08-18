@@ -8,3 +8,7 @@ def home(request):
         'restaurant_name': settings.restaurant_name
     }
     return HttpResponse(template.render(context, request))
+
+def about(request):
+    template = loader.get_template('about.html')
+    return HttpResponse(template.render())
